@@ -113,6 +113,18 @@ body {
     text-align: center;
 }
 
+.item-row {
+    min-width: 0;
+}
+
+.item-row input {
+    min-width: 0;
+}
+
+.items-container {
+    overflow-x: hidden;
+}
+
 /* RIGHT HALF SECTION */
 .invoice-preview {
     flex: 1; /* Takes 50% width */

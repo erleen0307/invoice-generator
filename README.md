@@ -60,8 +60,3 @@ Designed with flexibility in mind for real-world usage.
 ## 💡 Author
 
 Made with ❤️ by [@erleen0307](https://github.com/erleen0307)
-
-```
-
-If you want a **shorter README**, a **hackathon-style README**, or one optimized for **recruiters**, say the word — I’ll tailor it 🔥
-```

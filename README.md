@@ -17,7 +17,6 @@ The project was built to practice **DOM manipulation, form handling, and basic b
 - Dynamic invoice preview generated using JavaScript  
 - Automatic calculation of totals  
 - Responsive layout for different screen sizes  
-- Beginner-friendly, readable code structure  
 
 ---
 

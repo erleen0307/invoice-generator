@@ -218,3 +218,93 @@ body {
     outline: none;
     box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.4);
 }
+
+/* =========================
+   RESPONSIVE MEDIA QUERIES
+   ========================= */
+
+/* Tablets & below */
+@media (max-width: 1024px) {
+    body {
+        overflow: auto; /* allow scrolling on smaller screens */
+        height: auto;
+    }
+
+    .app-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input-panel,
+    .invoice-preview {
+        flex: none;
+        width: auto;
+        margin: 1rem;
+    }
+
+    .invoice-header h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Large phones & small tablets */
+@media (max-width: 768px) {
+    .input-panel,
+    .invoice-preview {
+        padding: 1.5rem;
+    }
+
+    .item-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .item-row input {
+        width: 100%;
+    }
+
+    .remove-item {
+        width: 100%;
+    }
+
+    .total-row {
+        font-size: 1.1rem;
+    }
+
+    .download-pdf {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .input-header h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .invoice-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .invoice-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .invoice-table th,
+    .invoice-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .grand-total {
+        font-size: 1.1rem;
+    }
+
+    .total-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}

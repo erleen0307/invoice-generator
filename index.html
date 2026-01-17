@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts: ROBOTO -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="app-container">
+        <!-- LEFT HALF SECTION -->
+        <section class="input-panel">
+            <header class="input-header">
+                <h2>Invoice Items</h2>
+            </header>
+            <div class="items-container">
+                <div class="item-row">
+                    <input type="text" class="item-name" placeholder="Item name">
+                    <input type="number" class="item-quantity" placeholder="Qty">
+                    <input type="number" class="item-price" placeholder="Price">
+                    <button class="remove-item">✕</button>
+                </div>
+                <div class="item-row">
+                    <input type="text" class="item-name" placeholder="Item name">
+                    <input type="number" class="item-quantity" placeholder="Qty">
+                    <input type="number" class="item-price" placeholder="Price">
+                    <button class="remove-item">✕</button>
+                </div>
+            </div>
+            <button class="add-item">Add Item</button>
+            <div class="grand-total">
+                <span>Grand Total: ₹0</span>
+            </div>
+        </section>
+
+        <!-- RIGHT HALF SECTION -->
+        <section class="invoice-preview">
+            <header class="invoice-header">
+                <h1>INVOICE</h1>
+                <p class="invoice-subtitle">Generated Invoice Preview</p>
+            </header>
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="invoice-row">
+                        <td>Sample Item 1</td>
+                        <td>2</td>
+                        <td>₹100</td>
+                    </tr>
+                    <tr class="invoice-row">
+                        <td>Sample Item 2</td>
+                        <td>1</td>
+                        <td>₹50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="invoice-divider">
+            <div class="total-row">
+                <span class="total-label">TOTAL</span>
+                <span class="total-amount">₹0</span>
+            </div>
+            <button class="download-pdf">Download PDF</button>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
